@@ -21,6 +21,8 @@ body {
     "left-sidebar main   main     right-sidebar"
     "left-sidebar main   main     right-sidebar";
   height: 100vh;
+
+  font-family: LatoRegular, Arial, Helvetica, sans-serif;
 }
 
 header {
