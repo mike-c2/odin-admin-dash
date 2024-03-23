@@ -12,6 +12,10 @@ body {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 #container {
   display: grid;
   grid-template-columns: 4fr 5fr 5fr 4fr;
@@ -52,7 +56,26 @@ header {
 }
 
 #notification-container {
-  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+#bell {
+  height: 2.2rem;
+}
+
+#notification-avatar {
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+#notification-name {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 #greeting-container {
