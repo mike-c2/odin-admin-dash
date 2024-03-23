@@ -22,6 +22,10 @@ a {
   background-color: rgb(60, 122, 255);
 }
 
+.common-bg {
+  background-color: rgb(217, 228, 239);
+}
+
 #container {
   display: grid;
   grid-template-columns: 4fr 5fr 5fr 4fr;
@@ -31,7 +35,7 @@ a {
     "left-sidebar main   main     right-sidebar"
     "left-sidebar main   main     right-sidebar"
     "left-sidebar main   main     right-sidebar";
-  height: 100vh;
+  min-height: 100vh;
 
   font-family: LatoRegular, Arial, Helvetica, sans-serif;
 }
@@ -55,7 +59,6 @@ header {
 }
 
 #search-bar-container > input {
-  background-color: rgb(217, 228, 239);
   padding: 0.8rem;
   border-radius: 2rem;
   margin-right: 1rem;
@@ -174,9 +177,64 @@ path {
   height: 4rem;
 }
 
+main,
+#right-sidebar {
+  border-top: 0.6rem solid rgb(207, 218, 229);;
+}
+
 main {
   grid-area: main;
-  background-color: gray;
+}
+
+main > h1 {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.card {
+  display: grid;
+  row-gap: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-left: 0.7rem solid gold;
+  background-color: white;
+  padding: 1em 0.9em 1em 0.5em;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgb(187, 187, 187); 
+}
+
+article {
+  margin-left: 1em;
+}
+
+article > h2 {
+  font-size: 2rem;
+}
+
+article > p {
+  color: rgb(93, 92, 92);
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  align-items: end;
+  column-gap: 2rem;
+}
+
+.icon-container img {
+  height: 2rem;
 }
 
 #right-sidebar {
