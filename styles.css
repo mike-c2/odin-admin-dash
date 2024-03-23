@@ -79,7 +79,35 @@ header {
 }
 
 #greeting-container {
-  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 10rem auto;
+  column-gap: 2rem;
+  font-weight: bold;
+}
+
+#greeting-avatar {
+  grid-row: 1 / 3;
+  grid-column-start: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+#greeting-avatar img {
+  height: 7rem;
+  border-radius: 4rem;
+}
+
+#greeting-text {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  align-self: end;
+}
+
+#greeting-name {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  align-self: start;
+  font-size: 2.5rem;
 }
 
 #buttons-container {
