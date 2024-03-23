@@ -18,7 +18,7 @@ a {
 
 .white-on-blue {
   color: white;
-  background-color: rgb(60, 60, 255);
+  background-color: rgb(60, 122, 255);
 }
 
 #container {
@@ -116,7 +116,24 @@ header {
 }
 
 #buttons-container {
-  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+}
+
+.header-buttons {
+  padding: 1rem 3rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+
+.header-buttons:hover {
+  background-color: rgb(40, 100, 255);
+  box-shadow: 0.2rem 0.2rem 0.4rem 0.1rem black; 
 }
 
 #left-sidebar {
