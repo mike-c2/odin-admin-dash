@@ -1,3 +1,7 @@
+:root {
+  --article-text-color: rgb(93, 92, 92);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -186,11 +190,15 @@ main {
   grid-area: main;
 }
 
-main > h1 {
-  margin-left: 1em;
-  margin-top: 1em;
+main > h1,
+#right-sidebar h1 {
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 1em;
+}
+
+main > h1 {
+  margin-left: 1em;
 }
 
 #projects-container {
@@ -201,16 +209,20 @@ main > h1 {
   padding-right: 1em;
 }
 
+.card,
+.side-card {
+  background-color: white;
+  padding: 1em 0.9em 1em 0.5em;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgb(187, 187, 187); 
+}
+
 .card {
   display: grid;
   row-gap: 1em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   border-left: 0.7rem solid gold;
-  background-color: white;
-  padding: 1em 0.9em 1em 0.5em;
-  border-radius: 0.8rem;
-  box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgb(187, 187, 187); 
 }
 
 article {
@@ -222,7 +234,7 @@ article > h2 {
 }
 
 article > p {
-  color: rgb(93, 92, 92);
+  color: var(--article-text-color);
 }
 
 .icon-container {
@@ -239,5 +251,19 @@ article > p {
 
 #right-sidebar {
   grid-area: right-sidebar;
-  background-color: magenta;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#right-sidebar h1 {
+  margin-bottom: 1.2em;
+}
+
+.side-card > article {
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.bottom-border {
+  border-bottom: 0.1rem solid var(--article-text-color);
 }
